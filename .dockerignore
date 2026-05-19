@@ -1,0 +1,97 @@
+# Build outputs
+**/bin
+**/obj
+**/node_modules
+**/dist
+**/build
+**/target
+**/output
+**/packages
+**/nuget
+
+# IDE and editor files
+**/.vs
+**/.vscode
+**/.idea
+**/_ReSharper.Caches
+**/.classpath
+**/.project
+**/.settings
+**/.toolstarget
+**/*.*proj.user
+**/*.dbmdl
+**/*.jfm
+
+# Logs and temporary files
+**/_logs
+**/npm-debug.log
+**/*.log
+**/*.binlog
+
+# Docker files (don't include docker folder in build context)
+docker/
+**/docker-compose*
+**/Dockerfile*
+
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Documentation and non-essential files
+README.md
+LICENSE
+**/*.md
+!ref/docs/
+!ref/diagrams/
+!ref/design/
+!ref/tests/
+!ref/sql/
+!ref/template*.txt
+!ref/LINQPad/
+
+# Archives and vault files
+!ref/*.7z
+!ref/vault.7z
+!ref/vault.json
+!ref/vault.*.json
+
+# Configuration files that shouldn't be in image
+**/.env
+**/secrets.dev.yaml
+**/values.dev.yaml
+**/azds.yaml
+# Test and coverage files
+**/TestResults
+**/coverage
+**/.coverage
+**/OpenCover
+
+# OS files
+**/.DS_Store
+**/Thumbs.db
+
+# Large directories that aren't needed for build
+images/
+shared/nginx/vhost.d/
+
+# Lock files (we'll restore packages in container)
+**/*.lock
+!pnpm-lock.yaml
+
+# Other build artifacts
+**/charts
+**/CMakeFiles
+**/CMakeCache.txt
+**/.localhistory
+**/.mfractor
+**/.ionide
+**/MigrationBackup
+**/healthchecksdb
+**/BSCPWGen-cache
+**/Generated Images
+**/Setup Files
+**/.scannerwork
+**/PublishProfiles
+**/ServiceDependencies
+**/.sec
